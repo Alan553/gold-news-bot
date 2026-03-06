@@ -3,8 +3,8 @@ import re
 import os
 from datetime import datetime
 
-api_id = int(os.getenv("39780948"))
-api_hash = os.getenv("be29273ba2666a856a477c219b800b6f")
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
 
 client = TelegramClient("bot", api_id, api_hash)
 
@@ -97,8 +97,3 @@ print("AI NEWS SNIPER GOLD BOT RUNNING...")
 
 client.start()
 client.run_until_disconnected()
-
-
-
-API_ID=39780948
-API_HASH=be29273ba2666a856a477c219b800b6f
